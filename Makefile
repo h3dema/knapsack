@@ -6,7 +6,8 @@ JC = javac
 
 CLASSES = \
 		Knapsack_conjunto.java \
-		Knapsack_unbounded.java
+		Knapsack_unbounded.java \
+		Knapsack_bounded.java
 
 default: classes
 
