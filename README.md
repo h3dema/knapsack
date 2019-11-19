@@ -18,7 +18,7 @@ Este é o problema clássico, algumas vezes chamado de 0-1 knapsack, pois você 
 
 O problema é definido como:
 
-![](Knapsack_conjunto.png)
+![](Knapsack_conjunto.png | width=300)
 
 
 * Knapsack_unbounded.java
@@ -27,7 +27,7 @@ Este programa executa o problema da mochila sobre um conjunto de itens, a difere
 
 O problema é definido como:
 
-![](Knapsack_unbounded.png)
+![](Knapsack_unbounded.png | width=300)
 
 
 
@@ -38,7 +38,7 @@ contudo existe um limite para a quantidade de cada item.
 
 O problema é definido como:
 
-![](Knapsack_bounded.png)
+![](Knapsack_bounded.png | width=300)
 
 
 
