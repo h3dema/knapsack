@@ -16,6 +16,12 @@ Este programa executa o problema da mochila sobre um conjunto de itens.
 O programa irá pegar cada item listado (sem repetição) e tentará achar o subconjunto deles que enche a mochila e possui o maior valor
 
 
+* Knapsack_unbounded.java
+
+Este programa executa o problema da mochila sobre um conjunto de itens, a diferença é que neste caso os itens podem ser repetidos.
+
+
+
 # Compilar
 
 
