@@ -5,7 +5,8 @@ JC = javac
 		$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-		Knapsack_conjunto.java
+		Knapsack_conjunto.java \
+		Knapsack_unbounded.java
 
 default: classes
 

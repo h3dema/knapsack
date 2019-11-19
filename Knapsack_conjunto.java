@@ -36,27 +36,27 @@
 class Knapsack_conjunto {
 
   /** abordagem bottom-up
-    * come�amos pelo caso base: zero itens com zero valor
-    * e come�amos a encher a mochila
+    * começamos pelo caso base: zero itens com zero valor
+    * e começamos a encher a mochila
     */
   public static int calcula(int capacidade, int[] pesos, int[] valores) {
     int n = pesos.length;
     int[][] k = new int[n+1][capacidade+1];
     for(int i = 0; i <= n; i++) {
       for(int w = 0; w <= capacidade; w++) {
-        if ((i == 0) || (w == 0)) // condi��o inicial
-          k[i][w] = 0;
+        if ((i == 0) || (w == 0)) // condição inicial
+          k[i][w] = 0; // nada na mochila
         else
-          // ainda d� para tentar inserir o item na mochila
+          // ainda dá para tentar inserir o item na mochila
           if (pesos[i-1] <= w)
-            // 2 condi��es: ainda tem espa�o ou tentamos retirar um item
+            // 2 condições: ainda tem espaço ou tentamos retirar um item
             k[i][w] = Math.max(valores[i-1] + k[i-1][w-pesos[i-1]], k[i-1][w]);
           else
-            // mochila j� est� cheia
+            // mochila já está cheia
             k[i][w] = k[i-1][w];
       }
     }
-    // imprime a matriz de c�lculo
+    // imprime a matriz de cálculo
     for(int w = 0; w <= capacidade; w++)
       System.out.printf("%3d ", w);
     System.out.printf(" << Capacidade\n");
