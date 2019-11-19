@@ -14,11 +14,18 @@ Existem diversas variações deste problema. Aqui veremos algumas delas.
 
 Este programa executa o problema da mochila sobre um conjunto de itens.
 O programa irá pegar cada item listado (sem repetição) e tentará achar o subconjunto deles que enche a mochila e possui o maior valor
+Este é o problema clássico, algumas vezes chamado de 0-1 knapsack, pois você só pode ter 0 ou 1 unidades de cada item.
 
 
 * Knapsack_unbounded.java
 
 Este programa executa o problema da mochila sobre um conjunto de itens, a diferença é que neste caso os itens podem ser repetidos.
+
+
+* Knapsack_bounded.java
+
+Este programa executa o problema da mochila sobre um conjunto de itens, a diferença é que neste caso os itens podem ser repetidos,
+contudo existe um limite para a quantidade de cada item.
 
 
 
